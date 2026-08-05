@@ -1,0 +1,5 @@
+import { BrandMark } from "./SiteHeader";
+import { siteHref } from "../lib/site-path";
+export function SiteFooter() {
+  return <footer className="site-footer"><div className="footer-main"><div className="footer-brand"><BrandMark /><div><strong>Quantum-AI Cybersecurity Repository</strong><p>Research-informed learning for the emerging cyber workforce.</p></div></div><div className="footer-links"><div><strong>Explore</strong><a href={siteHref("/modules")}>All modules</a><a href={siteHref("/modules/m1")}>Module 1</a><a href={siteHref("/#learning-model")}>Learning model</a></div><div><strong>Platforms</strong><a href="https://colab.research.google.com/" target="_blank" rel="noreferrer">Google Colab</a><a href="https://qiskit-community.github.io/qiskit-machine-learning/" target="_blank" rel="noreferrer">Qiskit Machine Learning</a></div></div></div><div className="footer-bottom"><span>Led by the University of Central Arkansas</span><span>Designed for open, cloud-accessible learning</span></div></footer>;
+}
